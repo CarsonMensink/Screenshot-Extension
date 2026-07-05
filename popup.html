@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font: 12px system-ui, sans-serif;
+            margin: 10px 12px;
+            width: 168px;
+            color: #222;
+        }
+
+        p {
+            margin: 0 0 8px;
+            font-weight: 600;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>After capture</p>
+    <label>
+        <input type="radio" name="output" value="clipboard">
+        Copy to clipboard
+    </label>
+    <label>
+        <input type="radio" name="output" value="tab">
+        Open in new tab
+    </label>
+    <script src="popup.js"></script>
+</body>
+</html>
